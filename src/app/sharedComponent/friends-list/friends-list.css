@@ -1,0 +1,14 @@
+.name-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+
+.name-inputs input {
+  width: 200px;
+}
+
+ul {
+  margin: 0;
+  padding-left: 22px;
+}

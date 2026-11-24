@@ -1,0 +1,29 @@
+.page {
+  max-width: 1000px;
+  margin: 20px auto 0;
+  padding: 0 16px;
+}
+
+.subtitle {
+  color: #6b7280;
+}
+
+.search {
+  width: 100%;
+  max-width: 520px;
+  box-sizing: border-box;
+  margin: 8px 0 16px;
+  padding: 10px 14px;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.search::placeholder {
+  font-style: italic;
+}
+
+.search:focus {
+  outline: none;
+  border-color: #2e6db4;
+}

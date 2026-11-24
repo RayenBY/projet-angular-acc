@@ -1,0 +1,25 @@
+<section class="card-section orange">
+  <div class="card-icon"><i class="bi bi-bell-fill"></i></div>
+  <div class="card-body">
+    <h2>Zone de notifications</h2>
+    <p>Vous avez {{ notifications().length }} nouvelles notifications.</p>
+
+    <button type="button" (click)="toggle()">
+      @if (showNotifications()) {
+        Masquer les notifications
+      } @else {
+        Afficher les notifications
+      }
+    </button>
+
+    @if (showNotifications()) {
+      <ul>
+        @for (notification of notifications(); track notification) {
+          <li>{{ notification }}</li>
+        } @empty {
+          <li>Aucune notification.</li>
+        }
+      </ul>
+    }
+  </div>
+</section>

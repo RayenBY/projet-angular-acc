@@ -1,0 +1,20 @@
+<section class="card-section green">
+  <div class="card-icon"><i class="bi bi-people-fill"></i></div>
+  <div class="card-body">
+    <h2>Liste des amis</h2>
+
+    <div class="name-inputs">
+      <input type="text" name="name1" [(ngModel)]="userName" />
+      <input type="text" name="name2" [(ngModel)]="userName" />
+      <input type="text" name="name3" [(ngModel)]="userName" />
+    </div>
+
+    <ul>
+      @for (friend of friends(); track friend) {
+        <li>{{ friend }}</li>
+      } @empty {
+        <li>Aucun ami pour le moment.</li>
+      }
+    </ul>
+  </div>
+</section>

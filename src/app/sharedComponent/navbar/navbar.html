@@ -1,0 +1,7 @@
+<nav class="menu">
+  @for (link of menu(); track link) {
+    <button type="button" class="menu-link" [class.active]="activeLink() === link" (click)="selectLink(link)">
+      {{ link }}
+    </button>
+  }
+</nav>
